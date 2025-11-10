@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Johnson - Creative Designer Portfolio</title>
+    <title>Alex Martinez - Digital Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">SJ</div>
+            <div class="logo">AM</div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,9 +27,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Sarah Johnson</h1>
-                <p class="hero-subtitle">Creative Designer & Brand Strategist</p>
-                <p class="hero-description">I create beautiful, meaningful designs that tell your story and connect with your audience.</p>
+                <h1 class="hero-title">Alex Martinez</h1>
+                <p class="hero-subtitle">Digital Creative & Visual Storyteller</p>
+                <p class="hero-description">Transforming ideas into compelling visual experiences through design, photography, and digital art.</p>
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -47,32 +47,32 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>With over 5 years of experience in graphic design and brand strategy, I specialize in creating visual identities that resonate with audiences and drive business results.</p>
-                    <p>My approach combines creative thinking with strategic insights to deliver designs that are not only beautiful but also effective in achieving your business goals.</p>
+                    <p>I'm a digital creative with a passion for visual storytelling. My work spans photography, digital illustration, and interactive design, bringing concepts to life through innovative visual solutions.</p>
+                    <p>Every project is an opportunity to push creative boundaries and deliver experiences that captivate and inspire. I believe in the power of visual communication to transform how people connect with brands and ideas.</p>
                     <div class="skills">
                         <h3>Skills & Expertise</h3>
                         <div class="skills-grid">
-                            <span class="skill-tag">Brand Identity</span>
-                            <span class="skill-tag">UI/UX Design</span>
-                            <span class="skill-tag">Web Design</span>
-                            <span class="skill-tag">Print Design</span>
-                            <span class="skill-tag">Illustration</span>
                             <span class="skill-tag">Photography</span>
+                            <span class="skill-tag">Digital Art</span>
+                            <span class="skill-tag">Video Editing</span>
+                            <span class="skill-tag">3D Design</span>
+                            <span class="skill-tag">Motion Graphics</span>
+                            <span class="skill-tag">Creative Direction</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-number">75+</div>
+                        <div class="stat-label">Creative Projects</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-number">45+</div>
+                        <div class="stat-label">Satisfied Clients</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Years Creating</div>
                     </div>
                 </div>
             </div>
@@ -86,52 +86,58 @@
                 <h2>My Portfolio</h2>
                 <p>Selected projects that showcase my work</p>
             </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="photography">Photography</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="photography">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                         <div class="portfolio-overlay">
-                            <h3>Brand Identity Design</h3>
-                            <p>Complete rebrand for tech startup</p>
+                            <h3>Photography Series</h3>
+                            <p>Urban landscapes collection</p>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="video">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                         <div class="portfolio-overlay">
-                            <h3>E-Commerce Website</h3>
-                            <p>Modern online store design</p>
+                            <h3>Motion Graphics</h3>
+                            <p>Animated brand video</p>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                         <div class="portfolio-overlay">
-                            <h3>Mobile App UI</h3>
-                            <p>User interface for fitness app</p>
+                            <h3>Digital Illustration</h3>
+                            <p>Character design series</p>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
                         <div class="portfolio-overlay">
-                            <h3>Print Campaign</h3>
-                            <p>Marketing materials for restaurant</p>
+                            <h3>3D Visualizations</h3>
+                            <p>Architectural renderings</p>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="video">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
                         <div class="portfolio-overlay">
-                            <h3>Logo Design</h3>
-                            <p>Brand identity for fashion brand</p>
+                            <h3>Video Production</h3>
+                            <p>Commercial campaign</p>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="photography">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
                         <div class="portfolio-overlay">
-                            <h3>Web Design</h3>
-                            <p>Corporate website redesign</p>
+                            <h3>Creative Direction</h3>
+                            <p>Full campaign concept</p>
                         </div>
                     </div>
                 </div>
@@ -149,27 +155,34 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            <p>sarah@example.com</p>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>alex@creativestudio.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <div>
-                            <strong>Phone</strong>
-                            <p>+1 (555) 123-4567</p>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div>
-                            <strong>Location</strong>
-                            <p>New York, USA</p>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Los Angeles, CA</p>
+                            </div>
                         </div>
-                    </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div>
+                                <strong>Social</strong>
+                                <p>@alexmartinez_creative</p>
+                            </div>
+                        </div>
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
@@ -193,8 +206,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Sarah Johnson. All rights reserved.</p>
-            <p class="footer-note">Website designed and built by <a href="#" target="_blank">Webs4U</a></p>
+            <p>&copy; 2024 Alex Martinez. All rights reserved.</p>
+            <p class="footer-note">Website designed and built by <a href="https://github.com/MoAmanjee/Webs-4U" target="_blank">Webs4U</a></p>
         </div>
     </footer>
 

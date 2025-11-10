@@ -61,3 +61,33 @@ document.querySelectorAll('.portfolio-item').forEach(el => {
     observer.observe(el);
 });
 
+// Portfolio Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filter = button.getAttribute('data-filter');
+        
+        portfolioItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.classList.remove('hidden');
+                // Re-animate visible items
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    });
+});
+
